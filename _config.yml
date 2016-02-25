@@ -1,10 +1,80 @@
-name: MStrutt.co.uk
+# Site settings
+title: My Nguyen
+description: My Nguyen's Portfolio
+favicon: 
+baseurl: 
+url: 
+rss_url: /resumecard/pages/atom.xml
+
+# Build settings
 markdown: kramdown
-kramdown:
-  input: GFM
-  auto_ids: true
-pygments: true
-permalink: /blog/:year/:month/:title/
-category_title_prefix: "Blog posts tagged with: "
-category_dir: /blog/tags/
-url: http://mstrutt.co.uk
+
+exclude: [vendor]
+
+# Author settings
+author:
+  name: My Nguyen
+  title: Junior Web Developer
+  address: Conway, Arkansas
+  email: my@vnguyen.net
+  link: vnguyen.net
+  github: nguyenmv2
+  linkedin: my-nguyen-779b4a8b
+  gavatar: /resumecard/assets/img/avatar.JPG
+  workHistory:
+    - work1:
+      title: MoneyManager - Budget Tracker
+      description: This is my first exposure to Java 8 and the new Swing replacement, JavaFX. I am experienced in Java, but I havent built a GUI with JavaFX and Scene Builder before. I learnt a lot with this project. The GUI is clumpsy but functional. There are lots of space for improvement. The software uses P2P connection to connect with the server, which house the database containing the transaction history and the remaining balance of the accounts. Multiple account is supported. The database is written in SQLite.
+        Tech Used - Java8, JavaFX, CSS
+      
+    - work2:
+      title: Chef Adventure
+      description: The game is part of the final project for Interactive Game Development course. The game is submitted to the Ludum Dare competition. Ludum Dare is a coding competition, which challenges a group of programmer to create a game with a unique theme in 72 hours.
+        Tech Used - Unity3D, C#
+
+    - work3:
+      title: Hidden Markov Model
+      description: Detect language of a text by training  a Markov Model with a collections of books in German, French, and English with over 50% accuracy 
+
+
+    - work3:
+      title: Artificial Intelligence
+      description: Chess AI against computer with Quiescence search and Alpha-beta pruning. with 55%-win rate.
+        Self-organizing map for classifying 6 different handwritten letters with over 60% accuracy.
+        Autonomously alter car structures to adapt with different configurations of race tracks using genetic algorithm.
+
+
+    
+  educationHistory:
+    - education1:
+      organization: Hendrix College
+      degree: Bachelor of Arts
+      major: Computer Science
+      started: 2012
+      duration: (2012 - 2016)
+      description: Something something 
+
+  languages:
+    - language1:
+      name: Vietnamese
+      proficiency: Native
+    - language2:
+      name: English
+      proficiency: Professional
+    
+  programmingSkills:
+    - skill1:
+      name: Java
+      percentage: 100%
+    - skill2:
+      name: SQL
+      percentage: 90%
+    - skill3:
+      name: Ruby on Rails
+      percentage: 80%
+    - skill4:
+      name: Python
+      percentage: 80%
+    - skill5:
+      name: ReactJS
+      percentage: 70%
