@@ -1,0 +1,10 @@
+name: MStrutt.co.uk
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+pygments: true
+permalink: /blog/:year/:month/:title/
+category_title_prefix: "Blog posts tagged with: "
+category_dir: /blog/tags/
+url: http://mstrutt.co.uk

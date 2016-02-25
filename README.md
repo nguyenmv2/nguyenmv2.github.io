@@ -1,26 +1,42 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Business Frontpage](http://startbootstrap.com/template-overviews/business-frontpage/)
+jekyll-portfolio
+================
 
-[Business Frontpage](http://startbootstrap.com/template-overviews/business-frontpage/) is a basic business website template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+[ ![Codeship Status for mstrutt/jekyll-portfolio](https://www.codeship.io/projects/58c32b10-a70a-0131-231e-3e5c9af62d7d/status)](https://www.codeship.io/projects/18952)
 
-## Getting Started
+My portfolio / blog ([mstrutt.co.uk](http://mstrutt.co.uk)), built using the Jekyll static site generator.
 
-To use this template, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+## Environment
 
-## Bugs and Issues
+This project requires an environment with `ruby` and `node` with `npm`.
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-business-frontpage/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/business-frontpage/).
+## Prerequisites
 
-## Creator
+This project relies on the global installation of the ruby gem `jekyll` and the npm package `grunt-cli`
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+### Suggested install
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+```
+npm install
+npm install -g grunt-cli
+gem install jekyll
+```
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+## Some grunt commands
 
-## Copyright and License
+### Main environment tasks
 
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-business-frontpage/blob/gh-pages/LICENSE) license.
+- `grunt` - Alias for `grunt serve`
+- `grunt build` - Compiles source files, then jekyll generates static site into the `build` folder, 
+- `grunt dist` - Builds, then adds in asset minification & legacy stylesheet into the `dist` folder
+- `grunt serve` - triggers a `grunt build` then starts a connect server in the `build` folder, watches for changes to rebuild
+- `grunt serve:dist` - targets the `dist` folder instead of `build`
+- `grunt test` - runs tests (currently just an alias for `eslint`)
+
+### Some useful subtasks
+
+- `grunt build:prep` - Cleans the `.tmp` and `build` folders, then copies the basic app into `.tmp`
+- `grunt build:css` - Compile Sass into CSS and automatically adds the right vendor prefixes
+- `grunt build:minify` - Minifies all CSS and JavaScript, switches html to use minified source
+- `grunt match_media` - Generate legacy stylesheet
+
+For a full list of tasks registered for this project, run `grunt --help`
